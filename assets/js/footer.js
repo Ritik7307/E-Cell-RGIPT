@@ -29,18 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </a>
                     </div>
                 </div>
-                // <!-- Contact Section -->
-                // <div class="col-lg-3 col-10 mt-4 mt-lg-0 contact-us">
-                //     <h4 class="fs-1 fw-bold">Contact Us</h4>
-                //     <p><i>ecell@rgipt.ac.in</i></p>
-                //     <div>
-                //         <div>
-                //             <input type="text" id="name" placeholder="Name"><br>
-                //             <input type="email" id="email" placeholder="E-Mail">
-                //         </div>
-                //         <button type="submit" id="submit">Submit <i class="bi bi-arrow-right"></i></button>
-                //     </div>
-                // </div>
+                
             </div>
             <p class="thanks pt-5">💟 With love from <span>Tech Team, E-Cell RGIPT</span></p>
         </div>
