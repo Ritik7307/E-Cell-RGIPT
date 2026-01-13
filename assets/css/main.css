@@ -169,6 +169,89 @@ h6 {
   padding: 30px;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+.events-section{
+  position: relative;
+}
+/* .container{
+  position: relative;
+  display: flex;
+} */
+.descp_info-1,.descp_info-2,.descp_info-3{
+  position: absolute;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  height: 80%;
+  width: 700px;
+  display: flex;
+  border-radius: 2rem;
+  flex-direction: column; /* important */
+  align-items: center;    /* horizontally center */
+  justify-content: center; /* sabko vertically center kar raha hai */
+  color: whitesmoke;
+  opacity: 0;
+  z-index: -10;
+  transition: .5s ease-in-out;
+  backdrop-filter: blur(8px);
+  border: 2px solid #ffffff59;
+  background: #00000088;
+  /* padding: 20px 25px; */
+}
+ .overlay {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    opacity: 0; /* ye dene ka bhi ek reason hai */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* bhai pointer events none krne se kisi bhi trh ka mouse event ex
+    click etc kaam nii krenge... Aur ye yha bht imp hai wjh tujhe pata h acches se*/
+    /* pointer-events: none; */
+    z-index: -16;
+    transition: 0.5s ease-in-out;
+  }
+  .overlayactive {
+    opacity: 1;
+    z-index: 9;
+    /* pointer-events: initial; */
+  }
+
+#corporate_duel{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.descp_card div{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  right: -90%;
+  top: -16%;
+  transform: translate(50%,50%);
+  color: red;
+  cursor: pointer;
+}
+.descp_card div i{
+  font-size: xx-large;
+}
+.active{
+  opacity: 1;
+  z-index: 10;
+}
+
+
+
+.descp_card{
+  /* position: absolute; */
+  
+
+}
 
 .event-card:hover .event-info {
   opacity: 1;
@@ -1238,3 +1321,4 @@ h6 {
     border-radius: 1rem;
   }
 }
+
